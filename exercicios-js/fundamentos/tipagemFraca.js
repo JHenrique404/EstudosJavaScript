@@ -5,6 +5,7 @@ console.log(typeof qualquer);
 
 qualquer = 3.1516   //Usa-se padrao americano para separar os numeros '.'
 console.log(qualquer);
+console.log(qualquer.toFixed((2))); //resume em 2 casas apos a ','
 console.log(typeof qualquer);
 
 //Evite escolher nomes genericos e siglas

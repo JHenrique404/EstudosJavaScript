@@ -17,3 +17,5 @@ const c = 5;
 // c = 50   ----Nao se pode mudar o valor de uma constante
 console.log(c)
 
+
+

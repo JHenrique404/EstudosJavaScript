@@ -7,7 +7,7 @@ console.log(escola.charCodeAt(3)) //Retorna o valor da tabela ASCII
 console.log(escola.indexOf('3')) //Retorna o indice associado ao digito 3 que esta dentro da palavra escola 
 
 console.log(escola.substring(1)) //Ele vai imprimir a palavra apartir do incidice 1 
-console.log(escola.substring(0, 3))
+console.log(escola.substring(0, 3)) //Imprime entre 0 e 3
 
 console.log('Escola '.concat(escola).concat("!")) //Basicamente junta as Strings, podendo usar variaveis tbm 
 console.log('Escola ' + escola + "!") //Pode fazer assim tambem
