@@ -1,0 +1,23 @@
+// Armazenando uma funcao em uma variavel
+const imprimirSoma = function (a, b) {
+    console.log(a + b)
+}
+
+imprimirSoma(2, 3)
+
+
+//Armazenando uma funcao arrow em uma variavel
+const soma = (a, b) => {
+    return a + b
+}
+
+console.log(soma(2, 3))
+
+
+//Retorno Implicito
+const subtracao = (a, b) => a - b  //quando vc n tem o corpo de uma funcao que sao as chaves {}, quer dizer que vc tem uma funcao com retorno em uma unica linha
+console.log(subtracao(10, 5))
+
+
+const imprimir2 = a => console.log(a)
+imprimir2(5)
