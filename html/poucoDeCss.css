@@ -1,0 +1,7 @@
+#textoPrincipal{ /*Para se referenciar a um ID usa-se o #*/
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background: rgb(124, 124, 124);
+}

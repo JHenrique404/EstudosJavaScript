@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Um Pouco de CSS</title>
+        <link rel="stylesheet" href="poucoDeCss.css"> <!--Faz referencia a o arquivo CSS-->
+        <style>
+            h1{         /*Pode colocar , e mais alguma coisa*/
+                        /*display: none;  --- Todos os h1 da pagina vao sumir*/
+                        /* background: red;  --- Define a cor do fundo*/
+                        /*position: absolute; --- Define a posicao do h1 como absoluta tendo 400px de cima e 400px de distancia
+                        top: 400px;
+                        right: 400px;
+                        */
+                font-size: 20px; /*Define o tamanho da fonte*/
+            }
+
+            .fundoVermelho { /*Classe CSS, tu cria uam classe com .*/
+                background-color: red;
+            }
+
+            .negrito{
+                font-weight: bold;
+            }
+
+            .branco{
+                color: white;
+            }
+        </style> <!--Codigos CSS-->
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <span id="textoPrincipal">Texto 1</span><br><br><br>
+        <span class="fundoVermelho negrito branco">Texto 2</span><br><br>
+        <span class="fundoVermelho" wm-atrib>Texto 3</span>
+    </body>
+</html>
+
+<!--o wb-atrib e um atributo-->
+
+<!--Notacao ponto (.class), serve tambem para fazer buscas por uma classe
+tipo no browser no console tu pode usar document.querySelectorALL('.fundoVermelho')
+para achar todos elemntos com fundo vermelho
+-->
+
+<!--document.querySelector('[wm-atrib]')  --- com isso consegue-se achar o atributo personalizado com JS-->
