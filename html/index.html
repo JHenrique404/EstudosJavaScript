@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios HTML</title>
+    <style>
+        #conteudo   {
+            padding: 30px 0px    /*Espaçamento*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exercicios HTML</h1>
+    </header>
+    <nav>
+        <!--Area de Adicionar as novas classes-->
+        <a href="exercicios/teste.html">00 - Exercicio Teste</a> |
+        <a href="exercicios/texto1.html">01 - Texto 1</a> |
+        <a href="exercicios/texto2.html">02 - Texto 2</a> |
+        <a href="exercicios/listas.html">03 - Listas </a> |
+        <a href="exercicios/listaAninhada.html">04 - Listas Alinhada</a> |
+        <a href="exercicios/links.html">05 - Links 1</a> |
+        <a href="exercicios/tabela.html">Tabela</a> |
+        <a href="exercicios/">Formulario 1</a> |
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Curso de Web Moderno
+    </footer>
+    <script> //Aqui voce digita o javaScript
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo') //Ele obtem o conteudo apartir da funcao getElementById
+
+            link.onclick = function (e) { //a variavel 'e' quer dizer evento, entao evento do click
+                e.preventDefault() // aqui ele vai previnir a funcao default de navegacao
+
+                fetch(link.href) //requisicao ajax em cima do atributo href que da o link da pagina
+                    .then(resp => resp.text()) // resp.text() --- serve para pegar o conteudo da pagina HTML que fez a requisicao
+                    .then(html => conteudo.innerHTML = html) //faz a requisicao em cima do link que obteve, e vai substitui o conteudo da section que tem o id 'conteudo'
+            }
+            //ele fez uma chamada ajax apartir do link exercicios/texte.html
+        })
+    </script>
+</body>
+
+</html>

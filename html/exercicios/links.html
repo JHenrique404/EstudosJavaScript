@@ -1,0 +1,27 @@
+<h1 id="inicio">Links</h1>
+
+<!--URL absoluta--> <!--Ela tem q ter HTTP-->
+<a href="http://www.google.com.br">Google 1</a> <br>
+<a href="http://www.google.com.br" target="_blank">Google 2</a> <!--Abre em uma outra aba--> <br><br>
+
+<!--URL Relativa-->
+<a href="index.html">Voltar 1</a> <br> <!--Ele vai tentar acessar index.html dentro de exercicios para voltar -->
+<a href="/index.html">Voltar 2</a> <br> <!--Pega a raiz da aplicacao e vai tentar acessar o index a partir da raiz-->
+<a href="../index.html">Voltar 3</a> <br><br> <!--Essa e a maneira mais facil de sair da pasta-->
+
+<!--Link para um EMAIL (Ele vai abrir ja com o email pra digitar)-->
+<a href="mailto: 404joaohbatista@gmail.com">Entre em contato</a> <br><br>
+
+
+
+<!--Ancora com CSS inline(dentro da tag usa a propriedade style diretamente nela)-->
+<!--div#noticia--> <!--Cria uma div com o ID NOTICIA-->
+<!--span.teste--> <!--Cria um span com a CLASSE TESTE-->
+
+<div id="noticia" style="position: absolute;top: 2000px;">
+    <h1>Noticia Guemba</h1>
+    <p>Nao era nada! ;)</p>
+    <a href="#inicio">Voltar pro inicio</a>
+</div>
+
+<a href="#noticia">Ir para Noticia</a> <!--Navegacao via ancora-->
